@@ -5,10 +5,18 @@ import { MaterialModule } from './material'; // Modulos de AngularMaterial decla
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainNavComponent,
+    ContactComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
