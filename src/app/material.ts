@@ -6,11 +6,12 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { LayoutModule } from '@angular/cdk/layout';
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
-  imports: [LayoutModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatIconModule,
+  imports: [LayoutModule, MatDialogModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatIconModule,
      MatMenuModule, MatSidenavModule, MatListModule],
-  exports: [LayoutModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatIconModule,
+  exports: [LayoutModule, MatDialogModule, MatButtonModule, MatCheckboxModule, MatToolbarModule, MatIconModule,
      MatMenuModule, MatSidenavModule, MatListModule],
 })
 export class MaterialModule {

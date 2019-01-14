@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { MyDialogComponent } from './home/my-dialog/my-dialog.component';
 
 
 
@@ -16,13 +17,17 @@ import { HomeComponent } from './home/home.component';
     AppComponent,
     MainNavComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    MyDialogComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule
+  ],
+  entryComponents: [
+    MyDialogComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
