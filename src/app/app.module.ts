@@ -9,6 +9,9 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { MyDialogComponent } from './home/my-dialog/my-dialog.component';
+import { CarouselComponent } from './home/carousel/carousel.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutmeComponent } from './aboutme/aboutme.component';
 
 
 
@@ -18,7 +21,10 @@ import { MyDialogComponent } from './home/my-dialog/my-dialog.component';
     MainNavComponent,
     ContactComponent,
     HomeComponent,
-    MyDialogComponent
+    MyDialogComponent,
+    CarouselComponent,
+    FooterComponent,
+    AboutmeComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,33 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8 ">
+      <!-- START INFORMATION SECTION -->
+      <div  class="card shadow-lg" *ngFor="let informacion of informaciones">
+        <h3 class="card-header myprimary" style="color:white;" *ngIf="showElement">
+          {{informacion['titulo']}} 
+        </h3>
+        <p>{{informacion['texto']}}</p>
+      </div>
+      <!-- END INFORMATION SECTION -->
+    </div>
+    <div class="col-4">
+        <!-- START PERFIL SECTION -->
+        <div class="card shadow-lg ">
+            <h5 class="card-header myprimary" style="color:white;" >Ely Gabriel Errico Villarroel</h5>
+            <div class="card-body">
+                <img src="../../assets/ely.jpg" alt="" style="max-width:60%;" class="img-thumbnail mx-auto d-block">
+                <h5 class="card-title">Perfil</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            </div>   
+        </div>
+        <!-- END PERFIL SECTION -->
+        <!-- START BUTTON GROUP -->
+        <div class="mt-5" role="group">
+            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="showElement(1)">Habilidades</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="showElement(2)">Experencia</button>
+            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="showElement(3)">Formacion</button>
+        </div>
+        <!-- END BUTTON GROUP -->
+    </div>
+  </div>
+</div>

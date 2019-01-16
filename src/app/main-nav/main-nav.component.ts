@@ -9,7 +9,12 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./main-nav.component.css']
 })
 export class MainNavComponent {
-
+   homeIcon: any = '<mat-icon>home</mat-icon>';
+  opciones = [
+    {'id': 1, 'name': 'Portafolio', 'route': '/portafolio'},
+    {'id': 2, 'name': 'About me', 'route': '/aboutme'},
+    {'id': 3, 'name': 'Contact', 'route': '/contact'}
+  ];
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
       map(result => result.matches)
