@@ -1,0 +1,10 @@
+.box-shadow{
+    -webkit-box-shadow: 5px 6px 22px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 6px 22px 1px rgba(0,0,0,0.75);
+    box-shadow: 5px 6px 22px 1px rgba(0,0,0,0.75);
+}
+
+.selected {
+    background-color: rgb(55, 61, 63) !important;
+    color: white;
+  }

@@ -2,12 +2,7 @@
   <div class="row">
     <div class="col-8 ">
       <!-- START INFORMATION SECTION -->
-      <div  class="card shadow-lg" *ngFor="let informacion of informaciones">
-        <h3 class="card-header myprimary" style="color:white;" *ngIf="showElement">
-          {{informacion['titulo']}} 
-        </h3>
-        <p>{{informacion['texto']}}</p>
-      </div>
+      <app-info-detail [info]="selectedInfo"></app-info-detail>
       <!-- END INFORMATION SECTION -->
     </div>
     <div class="col-4">
@@ -23,9 +18,11 @@
         <!-- END PERFIL SECTION -->
         <!-- START BUTTON GROUP -->
         <div class="mt-5" role="group">
-            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="showElement(1)">Habilidades</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="showElement(2)">Experencia</button>
-            <button type="button" class="btn btn-primary btn-lg btn-block" (click)="showElement(3)">Formacion</button>
+            <button 
+            *ngFor="let info of infos"
+            [class.selected]="info === selectedInfo"
+            class="btn btn-primary btn-lg btn-block" 
+            (click)="showElement(info)">{{info.titulo}}</button>
         </div>
         <!-- END BUTTON GROUP -->
     </div>

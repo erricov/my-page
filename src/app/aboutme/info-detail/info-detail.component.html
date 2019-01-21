@@ -1,0 +1,21 @@
+<div  class="card shadow-lg" *ngIf="info">
+    <h3 class="card-header myprimary" style="color:white;" >
+        {{info.titulo || uppercase}} 
+    </h3>
+  <div class="container mt-3">
+    <h4><strong>{{info.sub1}}</strong></h4>
+    <p>{{info.sub1d}}</p>
+    <h4><strong>{{info.sub2}}</strong></h4>
+    <p>{{info.sub2d}}</p>
+    <h4><strong>{{info.sub3}}</strong></h4>
+    <p>{{info.sub3d}}</p>
+    <h4><strong>{{info.array1t}}</strong></h4>
+    <ul>
+      <li *ngFor="let item of info.array1">{{item}}</li>
+    </ul>
+    <h4><strong>{{info.array2t}}</strong></h4>
+    <ul>
+      <li *ngFor="let item of info.array2">{{item}}</li>
+    </ul>
+  </div>
+</div>

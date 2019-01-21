@@ -1,4 +1,6 @@
+import { Information } from './information';
 import { Component, OnInit } from '@angular/core';
+import { InformacionesService } from './informaciones.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -6,30 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
-  informaciones: object[];
+  selectedInfo: Information; // AQUI SE LE ASIGNA LA CLASE Information a la variable SelectedINfo
+  infos: Information[]; // SE INICIALIZA EL ARRAY DONDE SE GUARDARAN LAS INFOS
 
-  showElement(number) {
-    if (number === 1) {
-      this.informaciones = [
-        {'id': 0, 'titulo': 'Habilidades', 'texto': 'lorem jutstu uzumakki'}
-      ];
-    }
-
-    if (number === 2) {
-      this.informaciones = [
-        {'id': 1, 'titulo': 'Experencia', 'texto': '<strong>' + 'IDIOMAS' + '</strong>' + 'Español, Ingles, Italiano'}
-      ];
-    }
-
-    if (number === 3) {
-      this.informaciones = [
-        {'id': 2, 'titulo': 'Formacion', 'texto': 'lorem jutstu uzumakki'}
-      ];
-    }
+  // MOSTRAR INFORMACION ESPECIFICA
+  showElement(info: Information): void {
+    this.selectedInfo = info; // le asignamos a la variable glbal SelectecInfo el valor recibido de info
   }
 
 
-  constructor() { }
+  constructor(infoService: InformacionesService) { 
+    this.infos = infoService.getInfos(); // OBTENEMOS LA DATA DEL INFOSERVICE Y SE LA ASIGNAMOS A INFOS
+  }
 
   ngOnInit() {
   }

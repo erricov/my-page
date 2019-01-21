@@ -12,6 +12,7 @@ import { MyDialogComponent } from './home/my-dialog/my-dialog.component';
 import { CarouselComponent } from './home/carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
+import { InfoDetailComponent } from './aboutme/info-detail/info-detail.component';
 
 
 
@@ -24,7 +25,8 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
     MyDialogComponent,
     CarouselComponent,
     FooterComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    InfoDetailComponent
   ],
   imports: [
     BrowserModule,
