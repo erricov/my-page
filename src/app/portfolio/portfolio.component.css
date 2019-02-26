@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette');
+.centrar
+	{
+        
+        width: 200px;
+        margin-top: 10%;
+        margin-bottom: 15%;
+        margin-left: 40%;
+    }
+.centrar p {
+    font-family: 'Courgette', cursive;
+    color: grey;
+    font-size: 2rem;
+}

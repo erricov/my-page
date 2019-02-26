@@ -13,6 +13,7 @@ import { CarouselComponent } from './home/carousel/carousel.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { InfoDetailComponent } from './aboutme/info-detail/info-detail.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -26,7 +27,8 @@ import { InfoDetailComponent } from './aboutme/info-detail/info-detail.component
     CarouselComponent,
     FooterComponent,
     AboutmeComponent,
-    InfoDetailComponent
+    InfoDetailComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

@@ -8,3 +8,11 @@
     background-color: rgb(55, 61, 63) !important;
     color: white;
   }
+
+.card-text{
+    margin: 0rem 1rem 0.5rem 1rem !important;
+}
+
+.card-title {
+    text-align: center;
+}
